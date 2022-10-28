@@ -1,0 +1,375 @@
+@font-face {
+  font-family: tahoma;
+  src: url(./Tahoma.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(43, 43, 43);
+}
+
+header {
+  position: relative;
+  width: 100% !important;
+  width: 100%;
+}
+header a {
+  color: black !important;
+}
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 1000;
+  transform: translateY(-40%);
+}
+header .nav-bottom {
+  position: relative;
+  padding: 16px 0;
+  border-bottom: #ea5455 6px solid;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav-bottom .logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: 2D4059;
+  font-family: "Montserrat", sans-serif;
+  line-height: 0;
+}
+header .nav-bottom .nav-links ul,
+header .nav-bottom .auth-btns ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+header .nav-bottom .nav-links li {
+  font-size: 18px;
+  margin: 0 20px;
+  font-weight: 500;
+}
+header .nav-bottom .auth-btns {
+  position: absolute;
+  right: 20px;
+}
+header .nav-bottom .auth-btns ul li {
+  color: black;
+  margin: 0 12px;
+}
+header .nav-bottom .auth-btns ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.two {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  font-family: tahoma;
+}
+.two .announcements,
+.two .drives {
+  width: 50%;
+  border: 1px solid gray;
+  margin-bottom: 16px;
+}
+.two .announcements .heading,
+.two .drives .heading {
+  padding: 8px 8px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-family: poppins;
+  background-color: #2d4059;
+  font-size: 18px;
+}
+.two .announcements .search,
+.two .drives .search {
+  padding: 8px 8px;
+  display: flex;
+  color: white;
+  font-weight: 600;
+  font-family: poppins;
+  background-color: #2d4059;
+  font-size: 18px;
+}
+.two .announcements .search input,
+.two .drives .search input {
+  width: 40%;
+  margin: 0 0 0 auto;
+}
+.two .announcements ul,
+.two .drives ul {
+  list-style-type: circle;
+  overflow-y: scroll;
+  height: 30vh;
+}
+.two .announcements ul li,
+.two .drives ul li {
+  border-bottom: 1px solid gray;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+.two .announcements ul li span.title,
+.two .drives ul li span.title {
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 6px;
+}
+.two .announcements ul li:hover,
+.two .drives ul li:hover {
+  background-color: rgb(206, 206, 206);
+}
+.two .announcements .form,
+.two .drives .form {
+  padding: 4% 6%;
+}
+.two .announcements .form .row,
+.two .drives .form .row {
+  margin: 12px;
+}
+.two .announcements .form button,
+.two .drives .form button {
+  margin: 0 24px;
+}
+.two .drive-reg {
+  width: 50%;
+  border: 1px solid gray;
+  margin-bottom: 16px;
+}
+.two .drive-reg .heading {
+  padding: 8px 8px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-family: poppins;
+  background-color: #2d4059;
+  font-size: 18px;
+}
+.two .drive-reg .item {
+  padding: 4% 12% 12%;
+}
+.two .drive-reg .item .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.two .drive-reg .item span {
+  font-weight: bold;
+  opacity: 0.8;
+}
+.two .drive-reg .item button {
+  margin: 12px 0;
+}
+
+.three {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  font-family: tahoma;
+}
+.three .announcements,
+.three .drives {
+  width: 100%;
+  border: 1px solid gray;
+  margin-bottom: 16px;
+}
+.three .announcements .search,
+.three .drives .search {
+  padding: 8px 8px;
+  display: flex;
+  color: white;
+  font-weight: 600;
+  font-family: poppins;
+  background-color: #2d4059;
+  font-size: 18px;
+}
+.three .announcements .search input,
+.three .drives .search input {
+  width: 40%;
+  margin: 0 0 0 auto;
+}
+.three .announcements .heading,
+.three .drives .heading {
+  padding: 8px 8px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-family: poppins;
+  background-color: #2d4059;
+  font-size: 18px;
+}
+.three .announcements ul,
+.three .drives ul {
+  list-style-type: circle;
+  overflow-y: scroll;
+  height: 30vh;
+}
+.three .announcements ul li,
+.three .drives ul li {
+  border-bottom: 1px solid gray;
+  font-size: 12px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.three .announcements ul li .info,
+.three .drives ul li .info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.three .announcements ul li .btns,
+.three .drives ul li .btns {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.three .announcements ul li .btns .btn,
+.three .drives ul li .btns .btn {
+  width: 70px;
+  height: 40px;
+}
+.three .announcements ul li span.title,
+.three .drives ul li span.title {
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 6px;
+}
+.three .announcements ul li:hover,
+.three .drives ul li:hover {
+  background-color: rgb(206, 206, 206);
+}
+.three .announcements .form,
+.three .drives .form {
+  padding: 4% 6%;
+}
+.three .announcements .form .row,
+.three .drives .form .row {
+  margin: 12px;
+}
+.three .announcements .form button,
+.three .drives .form button {
+  margin: 0 24px;
+}
+.three .summary {
+  border: 1px solid gray;
+  margin-bottom: 16px;
+}
+.three .summary .heading {
+  padding: 8px 8px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-family: poppins;
+  background-color: #2d4059;
+  font-size: 18px;
+}
+.three .summary .item {
+  padding: 4% 12% 12%;
+}
+.three .summary .item .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.three .summary .item span {
+  font-weight: bold;
+  opacity: 0.8;
+}
+.three .summary .item button {
+  margin: 12px 0;
+}
+.three .summary-data {
+  padding: 4% 6%;
+}
+.three .summary-data .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.three .summary-data .desc {
+  font-size: 14px;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.four {
+  background-color: white;
+  width: 65%;
+  display: flex;
+  font-family: tahoma;
+}
+.four .summary,
+.four .drive-reg {
+  width: 50%;
+  border: 1px solid gray;
+  margin-bottom: 16px;
+}
+.four .summary .heading,
+.four .drive-reg .heading {
+  padding: 8px 8px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-family: poppins;
+  background-color: #2d4059;
+  font-size: 18px;
+}
+.four .summary .item,
+.four .drive-reg .item {
+  padding: 4% 12% 12%;
+}
+.four .summary .item .title,
+.four .drive-reg .item .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.four .summary .item span,
+.four .drive-reg .item span {
+  font-weight: bold;
+  opacity: 0.8;
+}
+.four .summary .item button,
+.four .drive-reg .item button {
+  margin: 12px 0;
+}
+.four .summary-data {
+  padding: 4% 6%;
+}
+.four .summary-data .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.four .summary-data .desc {
+  font-size: 14px;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+}/*# sourceMappingURL=officer.css.map */

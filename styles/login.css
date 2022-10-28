@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  position: relative;
+  width: 100% !important;
+  width: 100%;
+}
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 1000;
+  transform: translateY(-40%);
+}
+header .logo a {
+  color: black;
+}
+header .nav-bottom {
+  position: relative;
+  padding: 16px 0;
+  border-bottom: #ea5455 6px solid;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav-bottom .logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: 2D4059;
+  font-family: "Montserrat", sans-serif;
+  line-height: 0;
+}
+header .nav-bottom .nav-links ul,
+header .nav-bottom .auth-btns ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+header .nav-bottom .nav-links li {
+  font-size: 18px;
+  margin: 0 20px;
+  font-weight: 500;
+}
+header .nav-bottom .auth-btns {
+  position: absolute;
+  right: 20px;
+}
+header .nav-bottom .auth-btns ul li {
+  color: black;
+  margin: 0 12px;
+}
+header .nav-bottom .auth-btns ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}/*# sourceMappingURL=login.css.map */
